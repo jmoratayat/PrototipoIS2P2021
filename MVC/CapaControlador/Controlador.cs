@@ -29,15 +29,20 @@ namespace CapaControlador
             string Consulta = "UPDATE  control_producto SET resultado_control_producto = 'Finalizado', estado_control_producto = 0 where pk_id_control_producto = " + Codigo + ";";
             return Modelo.funcModificar(Consulta);
         }
-        public OdbcDataReader funcConsultaDetallesCUI(string Tabla, string CodPedido)
+        public OdbcDataReader funcConsultaDetalles(string Tabla, string cod)
         {
-            string Consulta = "SELECT * FROM " + Tabla + " Where pk_id_usuario_pasaporte = " + CodPedido + ";";
+            string Consulta = "SELECT * FROM " + Tabla + " Where fkidrentaencabezado = " + cod + ";";
             return Modelo.funcConsulta(Consulta);
         }
-        public OdbcDataReader funcConsultaBanco(string Tabla, string CodPedido)
+        public OdbcDataReader funcConsultaEncabezado(string Tabla, string cod)
         {
-            string Consulta = "SELECT estado_boleta FROM " + Tabla + " Where pk_numero_boleta = " + CodPedido + ";";
+            string Consulta = "SELECT * FROM " + Tabla + " Where pkidrentaencabezado = " + cod + ";";
             return Modelo.funcConsulta(Consulta);
-        }  
+        }
+        public OdbcDataReader funcDevolver(string Codigo)
+        {
+            string Consulta = "UPDATE  renta_encabezado SET Estado = 0 where pkidrentaencabezado = " + Codigo + ";";
+            return Modelo.funcModificar(Consulta);
+        }
     }
 }

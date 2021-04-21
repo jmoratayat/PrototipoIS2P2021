@@ -404,6 +404,7 @@ CREATE TABLE `renta_encabezado` (
   `fecha_entrega` date DEFAULT NULL,
   `fkidscucursal` int(11) DEFAULT NULL,
   `total` double DEFAULT NULL,
+  `Estado` tinyint(2) DEFAULT NULL,	
   PRIMARY KEY (`pkidrentaencabezado`),
   KEY `fk_renta_membresia1_idx` (`pkidmembresia`),
   KEY `fk_renta_sucursal1_idx` (`fkidscucursal`),
