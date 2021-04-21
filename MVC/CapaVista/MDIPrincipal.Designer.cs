@@ -34,15 +34,9 @@ namespace CapaVista
             this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.windowsMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.newWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cascadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tileVerticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tileHorizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.arrangeIconsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,11 +49,19 @@ namespace CapaVista
             this.perfilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoAPerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignacionDeAplicacionAPerfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.windowsMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.newWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cascadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tileVerticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tileHorizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.arrangeIconsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.txtusuario = new System.Windows.Forms.TextBox();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.devolucionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -94,75 +96,22 @@ namespace CapaVista
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
-            // windowsMenu
-            // 
-            this.windowsMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newWindowToolStripMenuItem,
-            this.cascadeToolStripMenuItem,
-            this.tileVerticalToolStripMenuItem,
-            this.tileHorizontalToolStripMenuItem,
-            this.closeAllToolStripMenuItem,
-            this.arrangeIconsToolStripMenuItem});
-            this.windowsMenu.Name = "windowsMenu";
-            this.windowsMenu.Size = new System.Drawing.Size(68, 20);
-            this.windowsMenu.Text = "&Windows";
-            // 
-            // newWindowToolStripMenuItem
-            // 
-            this.newWindowToolStripMenuItem.Name = "newWindowToolStripMenuItem";
-            this.newWindowToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newWindowToolStripMenuItem.Text = "&New Window";
-            // 
-            // cascadeToolStripMenuItem
-            // 
-            this.cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
-            this.cascadeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cascadeToolStripMenuItem.Text = "&Cascade";
-            this.cascadeToolStripMenuItem.Click += new System.EventHandler(this.CascadeToolStripMenuItem_Click);
-            // 
-            // tileVerticalToolStripMenuItem
-            // 
-            this.tileVerticalToolStripMenuItem.Name = "tileVerticalToolStripMenuItem";
-            this.tileVerticalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.tileVerticalToolStripMenuItem.Text = "Tile &Vertical";
-            this.tileVerticalToolStripMenuItem.Click += new System.EventHandler(this.TileVerticalToolStripMenuItem_Click);
-            // 
-            // tileHorizontalToolStripMenuItem
-            // 
-            this.tileHorizontalToolStripMenuItem.Name = "tileHorizontalToolStripMenuItem";
-            this.tileHorizontalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.tileHorizontalToolStripMenuItem.Text = "Tile &Horizontal";
-            this.tileHorizontalToolStripMenuItem.Click += new System.EventHandler(this.TileHorizontalToolStripMenuItem_Click);
-            // 
-            // closeAllToolStripMenuItem
-            // 
-            this.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem";
-            this.closeAllToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.closeAllToolStripMenuItem.Text = "C&lose All";
-            this.closeAllToolStripMenuItem.Click += new System.EventHandler(this.CloseAllToolStripMenuItem_Click);
-            // 
-            // arrangeIconsToolStripMenuItem
-            // 
-            this.arrangeIconsToolStripMenuItem.Name = "arrangeIconsToolStripMenuItem";
-            this.arrangeIconsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.arrangeIconsToolStripMenuItem.Text = "&Arrange Icons";
-            this.arrangeIconsToolStripMenuItem.Click += new System.EventHandler(this.ArrangeIconsToolStripMenuItem_Click);
             // 
             // mantenimientosToolStripMenuItem
             // 
             this.mantenimientosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mantenimientoToolStripMenuItem});
+            this.mantenimientoToolStripMenuItem,
+            this.mantenimientoClienteToolStripMenuItem});
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
             this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.mantenimientosToolStripMenuItem.Text = "Catalogos";
@@ -170,12 +119,21 @@ namespace CapaVista
             // mantenimientoToolStripMenuItem
             // 
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
+            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.mantenimientoToolStripMenuItem.Text = "Mantenimiento Membresia";
             this.mantenimientoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem_Click);
+            // 
+            // mantenimientoClienteToolStripMenuItem
+            // 
+            this.mantenimientoClienteToolStripMenuItem.Name = "mantenimientoClienteToolStripMenuItem";
+            this.mantenimientoClienteToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.mantenimientoClienteToolStripMenuItem.Text = "Mantenimiento Cliente";
+            this.mantenimientoClienteToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoClienteToolStripMenuItem_Click);
             // 
             // procesosToolStripMenuItem
             // 
+            this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.devolucionToolStripMenuItem});
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
             this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.procesosToolStripMenuItem.Text = "Procesos";
@@ -265,6 +223,66 @@ namespace CapaVista
             this.asignacionDeAplicacionAPerfilToolStripMenuItem.Text = "0005- Asignacion de Aplicacion a Perfil";
             this.asignacionDeAplicacionAPerfilToolStripMenuItem.Click += new System.EventHandler(this.asignacionDeAplicacionAPerfilToolStripMenuItem_Click);
             // 
+            // windowsMenu
+            // 
+            this.windowsMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newWindowToolStripMenuItem,
+            this.cascadeToolStripMenuItem,
+            this.tileVerticalToolStripMenuItem,
+            this.tileHorizontalToolStripMenuItem,
+            this.closeAllToolStripMenuItem,
+            this.arrangeIconsToolStripMenuItem});
+            this.windowsMenu.Name = "windowsMenu";
+            this.windowsMenu.Size = new System.Drawing.Size(68, 20);
+            this.windowsMenu.Text = "&Windows";
+            // 
+            // newWindowToolStripMenuItem
+            // 
+            this.newWindowToolStripMenuItem.Name = "newWindowToolStripMenuItem";
+            this.newWindowToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.newWindowToolStripMenuItem.Text = "&New Window";
+            // 
+            // cascadeToolStripMenuItem
+            // 
+            this.cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
+            this.cascadeToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.cascadeToolStripMenuItem.Text = "&Cascade";
+            this.cascadeToolStripMenuItem.Click += new System.EventHandler(this.CascadeToolStripMenuItem_Click);
+            // 
+            // tileVerticalToolStripMenuItem
+            // 
+            this.tileVerticalToolStripMenuItem.Name = "tileVerticalToolStripMenuItem";
+            this.tileVerticalToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.tileVerticalToolStripMenuItem.Text = "Tile &Vertical";
+            this.tileVerticalToolStripMenuItem.Click += new System.EventHandler(this.TileVerticalToolStripMenuItem_Click);
+            // 
+            // tileHorizontalToolStripMenuItem
+            // 
+            this.tileHorizontalToolStripMenuItem.Name = "tileHorizontalToolStripMenuItem";
+            this.tileHorizontalToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.tileHorizontalToolStripMenuItem.Text = "Tile &Horizontal";
+            this.tileHorizontalToolStripMenuItem.Click += new System.EventHandler(this.TileHorizontalToolStripMenuItem_Click);
+            // 
+            // closeAllToolStripMenuItem
+            // 
+            this.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem";
+            this.closeAllToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.closeAllToolStripMenuItem.Text = "C&lose All";
+            this.closeAllToolStripMenuItem.Click += new System.EventHandler(this.CloseAllToolStripMenuItem_Click);
+            // 
+            // arrangeIconsToolStripMenuItem
+            // 
+            this.arrangeIconsToolStripMenuItem.Name = "arrangeIconsToolStripMenuItem";
+            this.arrangeIconsToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.arrangeIconsToolStripMenuItem.Text = "&Arrange Icons";
+            this.arrangeIconsToolStripMenuItem.Click += new System.EventHandler(this.ArrangeIconsToolStripMenuItem_Click);
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
             // statusStrip
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -289,11 +307,12 @@ namespace CapaVista
             this.txtusuario.Size = new System.Drawing.Size(100, 20);
             this.txtusuario.TabIndex = 4;
             // 
-            // ayudaToolStripMenuItem
+            // devolucionToolStripMenuItem
             // 
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            this.devolucionToolStripMenuItem.Name = "devolucionToolStripMenuItem";
+            this.devolucionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.devolucionToolStripMenuItem.Text = "Devolucion";
+            this.devolucionToolStripMenuItem.Click += new System.EventHandler(this.devolucionToolStripMenuItem_Click);
             // 
             // MDIPrincipal
             // 
@@ -350,6 +369,8 @@ namespace CapaVista
         private System.Windows.Forms.ToolStripMenuItem asignacionDeAplicacionAPerfilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenimiendoAplicacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoClienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem devolucionToolStripMenuItem;
     }
 }
 

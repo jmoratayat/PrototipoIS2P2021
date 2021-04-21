@@ -211,5 +211,41 @@ namespace CapaVista
                 MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
             }
         }
+
+        private void mantenimientoClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (seguridad.PermisosAcceso("5", txtusuario.Text) == 1)
+            {
+                bit.user(txtusuario.Text);
+                bit.insert("Ingreso a Asignacion de Aplicaciones a Perfil", 5);
+                Mantenimientos.frmMantenimientoCliente perfil = new Mantenimientos.frmMantenimientoCliente(txtusuario.Text);
+                perfil.MdiParent = this;
+                perfil.Show();
+            }
+            else
+            {
+                bit.user(txtusuario.Text);
+                bit.insert("Trato de Ingresar A Asignacion de Aplicaciones a perfil", 5);
+                MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
+            }
+        }
+
+        private void devolucionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (seguridad.PermisosAcceso("5", txtusuario.Text) == 1)
+            {
+                bit.user(txtusuario.Text);
+                bit.insert("Ingreso a Asignacion de Aplicaciones a Perfil", 5);
+                Procesos.frmDevolucion perfil = new Procesos.frmDevolucion(txtusuario.Text);
+                perfil.MdiParent = this;
+                perfil.Show();
+            }
+            else
+            {
+                bit.user(txtusuario.Text);
+                bit.insert("Trato de Ingresar A Asignacion de Aplicaciones a perfil", 5);
+                MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
+            }
+        }
     }
 }

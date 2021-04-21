@@ -16,3 +16,12 @@ C:\Users\jmora\Desktop\Parcial\MVC\CapaControlador\obj\Debug\CapaControlador.csp
 C:\Users\jmora\Desktop\Parcial\MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\jmora\Desktop\Parcial\MVC\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\jmora\Desktop\Parcial\MVC\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\jmora\Desktop\2ParcialIS\SubirParcial\PrototipoIS2P2021\MVC\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\jmora\Desktop\2ParcialIS\SubirParcial\PrototipoIS2P2021\MVC\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\jmora\Desktop\2ParcialIS\SubirParcial\PrototipoIS2P2021\MVC\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\jmora\Desktop\2ParcialIS\SubirParcial\PrototipoIS2P2021\MVC\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\jmora\Desktop\2ParcialIS\SubirParcial\PrototipoIS2P2021\MVC\CapaControlador\obj\Debug\CapaControlador.csprojAssemblyReference.cache
+C:\Users\jmora\Desktop\2ParcialIS\SubirParcial\PrototipoIS2P2021\MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\jmora\Desktop\2ParcialIS\SubirParcial\PrototipoIS2P2021\MVC\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\jmora\Desktop\2ParcialIS\SubirParcial\PrototipoIS2P2021\MVC\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\jmora\Desktop\2ParcialIS\SubirParcial\PrototipoIS2P2021\MVC\CapaControlador\obj\Debug\CapaControlador.pdb

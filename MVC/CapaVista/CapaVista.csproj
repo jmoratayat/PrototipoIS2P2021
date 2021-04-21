@@ -53,11 +53,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mantenimientos\frmMantenimiento.cs">
+    <Compile Include="Mantenimientos\frmMantenimientoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mantenimientos\frmMantenimiento.Designer.cs">
-      <DependentUpon>frmMantenimiento.cs</DependentUpon>
+    <Compile Include="Mantenimientos\frmMantenimientoCliente.Designer.cs">
+      <DependentUpon>frmMantenimientoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\frmMantenimientoMembresia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frmMantenimientoMembresia.Designer.cs">
+      <DependentUpon>frmMantenimientoMembresia.cs</DependentUpon>
     </Compile>
     <Compile Include="MDIPrincipal.cs">
       <SubType>Form</SubType>
@@ -65,15 +71,28 @@
     <Compile Include="MDIPrincipal.Designer.cs">
       <DependentUpon>MDIPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\frmDevolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\frmDevolucion.Designer.cs">
+      <DependentUpon>frmDevolucion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Mantenimientos\frmMantenimiento.resx">
-      <DependentUpon>frmMantenimiento.cs</DependentUpon>
+    <EmbeddedResource Include="Mantenimientos\frmMantenimientoCliente.resx">
+      <DependentUpon>frmMantenimientoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frmMantenimientoMembresia.resx">
+      <DependentUpon>frmMantenimientoMembresia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIPrincipal.resx">
       <DependentUpon>MDIPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\frmDevolucion.resx">
+      <DependentUpon>frmDevolucion.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
